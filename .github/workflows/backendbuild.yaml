@@ -1,9 +1,10 @@
-name: Build frontend image
+name: Build backend image
 on:
   push:
     branches:
       - main
       - develop
+      # - feature*
       
   workflow_dispatch:
       

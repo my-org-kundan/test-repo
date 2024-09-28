@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - develop
+      - feature*
 
   workflow_dispatch:
       
@@ -25,7 +26,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       - name: Install dependencies
-        run: npm install
+        run: npm install frontend\todo-app\package.json
 
       - name: build dependencies
         run: npm run build
