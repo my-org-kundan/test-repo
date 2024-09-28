@@ -26,7 +26,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       - name: Install dependencies
-        run: npm install frontend/todo-app/package.json
+        run: npm install frontend/todo-app
 
       - name: build dependencies
         run: npm run build
