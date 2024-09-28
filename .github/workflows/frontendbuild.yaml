@@ -31,6 +31,11 @@ jobs:
       - name: build dependencies
         run: cd frontend/todo-app && npm run build
 
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.4.0
+        with:
+          name: my-artifact
+          path: frontend/todo-app/build # or path/to/artifact
 
 
     #   - name: Login to Docker Hub
