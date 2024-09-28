@@ -1,5 +1,9 @@
-FROM node:18-alpine
+FROM node:18-alpine as builder
 
-COPY . .
+WORKDIR /usr/app
 
-RUN echo "hi from frontend"
+COPY package.json .
+
+RUN npm install 
+
+CMD [ "executable" ]
