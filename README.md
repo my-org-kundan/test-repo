@@ -1,6 +1,19 @@
 # test-repo
 Testing pipeline products
 
+
+# Branch naming conventions
+
+for creating a new branch
+use the convention as
+
+`git clone https://github.com/my-org-kundan/test-repo.git`
+
+`cd test-repo`
+
+`git checkout -b feature/feature_name`
+
+
 # FRONTEND COMMANDS
 
 To address all issues (including breaking changes), run:
